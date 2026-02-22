@@ -87,9 +87,16 @@
             <a href="www.linkedin.com/in/anthony-caesar-72b0b7232" target="_blank">
                 <i class="fab fa-linkedin"></i>
             </a>
-            <a href="mailto:anthonynnamani20@email.com">
+            <a href="#" id="email-link">
                 <i class="fas fa-envelope"></i>
             </a>
+            <script>
+            document.getElementById("email-link").addEventListener("click", function () {
+                const user = "kyser";
+                const domain = "gmail.com";
+                window.location.href = "mailto:" + user + "@" + domain;
+            });
+            </script>
         </div>
     </div>
 </section>
